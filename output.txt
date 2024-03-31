@@ -1,0 +1,962 @@
+[INFO] --- clean:3.2.0:clean (default-clean) @ mqtt-lwt ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/mqtt-lwt/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ mqtt-lwt ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ mqtt-lwt ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/mqtt-lwt/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mqtt-lwt ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mqtt-lwt ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 10 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] -------------------< io.enmasse:standard-controller >-------------------
+[INFO] Building standard-controller 0.17-SNAPSHOT                       [10/20]
+[INFO]   from standard-controller/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ standard-controller ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/standard-controller/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ standard-controller ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ standard-controller ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/standard-controller/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ standard-controller ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/standard-controller/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ standard-controller ---
+[INFO] Changes detected - recompiling the module! :dependency
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 12 source files with javac [debug target 1.8] to target/classes
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/standard-controller/src/main/java/io/enmasse/controller/standard/AddressController.java: /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/standard-controller/src/main/java/io/enmasse/controller/standard/AddressController.java uses unchecked or unsafe operations.
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/standard-controller/src/main/java/io/enmasse/controller/standard/AddressController.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] -------------------< io.enmasse:address-controller >--------------------
+[INFO] Building address-controller 0.17-SNAPSHOT                        [11/20]
+[INFO]   from address-controller/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ address-controller ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/address-controller/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ address-controller ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ address-controller ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/address-controller/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ address-controller ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ address-controller ---
+[INFO] Changes detected - recompiling the module! :dependency
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 71 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] ------------------------< io.enmasse:keycloak >-------------------------
+[INFO] Building keycloak 0.17-SNAPSHOT                                  [12/20]
+[INFO]   from keycloak-plugin/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ keycloak ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/keycloak-plugin/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ keycloak ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ keycloak ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/keycloak-plugin/target/jacoco.exec
+[INFO] 
+[INFO] -----------------------< io.enmasse:sasl-plugin >-----------------------
+[INFO] Building sasl-plugin 0.17-SNAPSHOT                               [13/20]
+[INFO]   from keycloak-plugin/sasl-plugin/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ sasl-plugin ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/keycloak-plugin/sasl-plugin/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ sasl-plugin ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ sasl-plugin ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/keycloak-plugin/sasl-plugin/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ sasl-plugin ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ sasl-plugin ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 16 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] -------------------< io.enmasse:keycloak-controller >-------------------
+[INFO] Building keycloak-controller 0.17-SNAPSHOT                       [14/20]
+[INFO]   from keycloak-controller/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ keycloak-controller ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/keycloak-controller/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ keycloak-controller ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ keycloak-controller ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/keycloak-controller/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ keycloak-controller ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ keycloak-controller ---
+[INFO] Changes detected - recompiling the module! :dependency
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 5 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] -----------------------< io.enmasse:systemtests >-----------------------
+[INFO] Building systemtests 0.17-SNAPSHOT                               [15/20]
+[INFO]   from systemtests/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.seleniumhq.selenium:selenium-devtools-v119:jar:4.16.0 is missing, no dependency information available
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ systemtests ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ systemtests ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ systemtests ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ systemtests ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ systemtests ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 76 source files with javac [debug target 1.8] to target/classes
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/PlansProvider.java:[10,46] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/TestUtils.java:[15,46] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/PlansProvider.java:[10,46] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/TestUtils.java:[15,46] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/PlansProvider.java:[10,46] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/TestUtils.java:[15,46] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/PlansProvider.java:[54,76] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/TestUtils.java:[415,49] non-varargs call of varargs method with inexact argument type for last parameter;
+  cast to java.lang.Object for a varargs call
+  cast to java.lang.Object[] for a non-varargs call and to suppress this warning
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/TestUtils.java:[537,78] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/TestUtils.java:[538,19] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/TestUtils.java:[549,106] sun.reflect.generics.reflectiveObjects.NotImplementedException is internal proprietary API and may be removed in a future release
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/PlansProvider.java: /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/PlansProvider.java uses unchecked or unsafe operations.
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/systemtests/src/main/java/io/enmasse/systemtest/PlansProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] -------------------------< io.enmasse:artemis >-------------------------
+[INFO] Building artemis 0.17-SNAPSHOT                                   [16/20]
+[INFO]   from artemis/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ artemis ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ artemis ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ artemis ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/target/jacoco.exec
+[INFO] 
+[INFO] ---------------------< io.enmasse:amqp-connector >----------------------
+[INFO] Building amqp-connector 0.17-SNAPSHOT                            [17/20]
+[INFO]   from artemis/amqp-connector/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ amqp-connector ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/amqp-connector/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ amqp-connector ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ amqp-connector ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/amqp-connector/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ amqp-connector ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/amqp-connector/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ amqp-connector ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 5 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] ---------------------< io.enmasse:sasl-delegation >---------------------
+[INFO] Building sasl-delegation 0.17-SNAPSHOT                           [18/20]
+[INFO]   from artemis/sasl-delegation/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ sasl-delegation ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/sasl-delegation/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ sasl-delegation ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ sasl-delegation ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/sasl-delegation/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ sasl-delegation ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/sasl-delegation/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ sasl-delegation ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 5 source files with javac [debug target 1.8] to target/classes
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/sasl-delegation/src/main/java/io/enmasse/artemis/sasl_delegation/SaslDelegatingLogin.java: /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/sasl-delegation/src/main/java/io/enmasse/artemis/sasl_delegation/SaslDelegatingLogin.java uses unchecked or unsafe operations.
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/sasl-delegation/src/main/java/io/enmasse/artemis/sasl_delegation/SaslDelegatingLogin.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] ----------------------< io.enmasse:shutdown-hook >----------------------
+[INFO] Building shutdown-hook 0.17-SNAPSHOT                             [19/20]
+[INFO]   from artemis/shutdown-hook/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ shutdown-hook ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/shutdown-hook/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ shutdown-hook ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ shutdown-hook ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/shutdown-hook/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ shutdown-hook ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ shutdown-hook ---
+[INFO] Changes detected - recompiling the module! :dependency
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 10 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] ----------------------< io.enmasse:jmx_exporter >-----------------------
+[INFO] Building jmx_exporter 0.17-SNAPSHOT                              [20/20]
+[INFO]   from artemis/jmx_exporter/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ jmx_exporter ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/jmx_exporter/target
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ jmx_exporter ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- jacoco:0.7.9:prepare-agent (default) @ jmx_exporter ---
+[INFO] surefireArgLine set to -javaagent:/Users/jingyaogu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/jmx_exporter/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ jmx_exporter ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/artemis/jmx_exporter/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ jmx_exporter ---
+[INFO] No sources to compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for enmasse 0.17-SNAPSHOT:
+[INFO] 
+[INFO] enmasse ............................................ SUCCESS [  0.562 s]
+[INFO] address-model-lib .................................. SUCCESS [  0.646 s]
+[INFO] k8s-api ............................................ SUCCESS [  0.276 s]
+[INFO] k8s-api-testutil ................................... SUCCESS [  0.094 s]
+[INFO] amqp-utils ......................................... SUCCESS [  0.379 s]
+[INFO] discovery-lib ...................................... SUCCESS [  0.082 s]
+[INFO] topic-forwarder .................................... SUCCESS [  0.199 s]
+[INFO] mqtt-gateway ....................................... SUCCESS [  0.332 s]
+[INFO] mqtt-lwt ........................................... SUCCESS [  0.183 s]
+[INFO] standard-controller ................................ SUCCESS [  0.225 s]
+[INFO] address-controller ................................. SUCCESS [  0.518 s]
+[INFO] keycloak ........................................... SUCCESS [  0.008 s]
+[INFO] sasl-plugin ........................................ SUCCESS [  0.229 s]
+[INFO] keycloak-controller ................................ SUCCESS [  0.058 s]
+[INFO] systemtests ........................................ SUCCESS [  1.660 s]
+[INFO] artemis ............................................ SUCCESS [  0.010 s]
+[INFO] amqp-connector ..................................... SUCCESS [  0.176 s]
+[INFO] sasl-delegation .................................... SUCCESS [  0.074 s]
+[INFO] shutdown-hook ...................................... SUCCESS [  0.302 s]
+[INFO] jmx_exporter ....................................... SUCCESS [  0.013 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.134 s
+[INFO] Finished at: 2024-03-31T01:34:28-05:00
+[INFO] ------------------------------------------------------------------------
+
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version...
+Command Output: [INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.enmasse:amqp-utils:jar:0.17-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.activemq:artemis-amqp-protocol:jar -> duplicate declaration of version ${artemis.version} @ line 66, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] enmasse                                                            [pom]
+[INFO] address-model-lib                                                  [jar]
+[INFO] k8s-api                                                            [jar]
+[INFO] k8s-api-testutil                                                   [jar]
+[INFO] amqp-utils                                                         [jar]
+[INFO] discovery-lib                                                      [jar]
+[INFO] topic-forwarder                                                    [jar]
+[INFO] mqtt-gateway                                                       [jar]
+[INFO] mqtt-lwt                                                           [jar]
+[INFO] standard-controller                                                [jar]
+[INFO] address-controller                                                 [jar]
+[INFO] keycloak                                                           [pom]
+[INFO] sasl-plugin                                                        [jar]
+[INFO] keycloak-controller                                                [jar]
+[INFO] systemtests                                                        [jar]
+[INFO] artemis                                                            [pom]
+[INFO] amqp-connector                                                     [jar]
+[INFO] sasl-delegation                                                    [jar]
+[INFO] shutdown-hook                                                      [jar]
+[INFO] jmx_exporter                                                       [jar]
+[INFO] 
+[INFO] -------------------------< io.enmasse:enmasse >-------------------------
+[INFO] Building enmasse 0.17-SNAPSHOT                                    [1/20]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:build-classpath (default-cli) @ enmasse ---
+[INFO] No dependencies found.
+[INFO] Skipped writing classpath file '/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/cp.txt'.  No changes found.
+[INFO] 
+[INFO] --------------------< io.enmasse:address-model-lib >--------------------
+[INFO] Building address-model-lib 0.17-SNAPSHOT                          [2/20]
+[INFO]   from address-model-lib/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:build-classpath (default-cli) @ address-model-lib ---
+[INFO] Skipped writing classpath file '/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/address-model-lib/cp.txt'.  No changes found.
+[INFO] 
+[INFO] -------------------------< io.enmasse:k8s-api >-------------------------
+[INFO] Building k8s-api 0.17-SNAPSHOT                                    [3/20]
+[INFO]   from k8s-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for enmasse 0.17-SNAPSHOT:
+[INFO] 
+[INFO] enmasse ............................................ SUCCESS [  0.450 s]
+[INFO] address-model-lib .................................. SUCCESS [  0.020 s]
+[INFO] k8s-api ............................................ FAILURE [  0.024 s]
+[INFO] k8s-api-testutil ................................... SKIPPED
+[INFO] amqp-utils ......................................... SKIPPED
+[INFO] discovery-lib ...................................... SKIPPED
+[INFO] topic-forwarder .................................... SKIPPED
+[INFO] mqtt-gateway ....................................... SKIPPED
+[INFO] mqtt-lwt ........................................... SKIPPED
+[INFO] standard-controller ................................ SKIPPED
+[INFO] address-controller ................................. SKIPPED
+[INFO] keycloak ........................................... SKIPPED
+[INFO] sasl-plugin ........................................ SKIPPED
+[INFO] keycloak-controller ................................ SKIPPED
+[INFO] systemtests ........................................ SKIPPED
+[INFO] artemis ............................................ SKIPPED
+[INFO] amqp-connector ..................................... SKIPPED
+[INFO] sasl-delegation .................................... SKIPPED
+[INFO] shutdown-hook ...................................... SKIPPED
+[INFO] jmx_exporter ....................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.696 s
+[INFO] Finished at: 2024-03-31T01:34:29-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project k8s-api: Could not resolve dependencies for project io.enmasse:k8s-api:jar:0.17-SNAPSHOT: The following artifacts could not be resolved: io.enmasse:address-model-lib:jar:0.17-SNAPSHOT (absent): Could not find artifact io.enmasse:address-model-lib:jar:0.17-SNAPSHOT -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :k8s-api
+
+Error: 
+Generating tests for ['io.enmasse.address.model.Status\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Buggy-Version...
+Command Output: Randoop for Java version 4.3.2.
+
+Could not load class io.enmasse.address.model.Status: Unable to load class "io.enmasse.address.model.Status" due to exception: java.lang.ClassNotFoundException: io.enmasse.address.model.Status
+Classpath:
+
+/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar
+/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Buggy-Version/target/classes/
+
+Error: 
+Command Output: Randoop for Java version 4.3.2.
+
+Could not load class io.enmasse.address.model.Status: Unable to load class "io.enmasse.address.model.Status" due to exception: java.lang.ClassNotFoundException: io.enmasse.address.model.Status
+Classpath:
+
+/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar
+/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Buggy-Version/target/classes/
+
+Error: 
+Error-revealing tests were generated.
+Generating tests for ['io.enmasse.address.model.Status\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version...
+Command Output: Randoop for Java version 4.3.2.
+
+Could not load class io.enmasse.address.model.Status: Unable to load class "io.enmasse.address.model.Status" due to exception: java.lang.ClassNotFoundException: io.enmasse.address.model.Status
+Classpath:
+
+/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar
+/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/target/classes/
+
+Error: 
+Command Output: Randoop for Java version 4.3.2.
+
+Could not load class io.enmasse.address.model.Status: Unable to load class "io.enmasse.address.model.Status" due to exception: java.lang.ClassNotFoundException: io.enmasse.address.model.Status
+Classpath:
+
+/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar
+/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version/target/classes/
+
+Error: 
+Error-revealing tests were generated.
+jingyaogu@Jingyaos-MacBook-Air Bears % python3 run_randoop.py
+Processing project: Bears-25
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version...
+Command Output: [INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.fasterxml.jackson.core:jackson-databind >-------------
+[INFO] Building jackson-databind 2.8.10-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[WARNING] The artifact javax.measure:jsr-275:jar:1.0.0 has been relocated to javax.measure:jsr-275:jar:0.9.1
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ jackson-databind ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version/target
+[INFO] 
+[INFO] --- enforcer:1.3.1:enforce (enforce-java) @ jackson-databind ---
+[INFO] 
+[INFO] --- build-helper:1.7:add-source (add-generated-sources) @ jackson-databind ---
+[INFO] Source directory: /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.2:replace (process-packageVersion) @ jackson-databind ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ jackson-databind ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.2:compile (default-compile) @ jackson-databind ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 398 source files to /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version/src/main/java/com/fasterxml/jackson/databind/node/ObjectNode.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.801 s
+[INFO] Finished at: 2024-03-31T01:35:10-05:00
+[INFO] ------------------------------------------------------------------------
+
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version...
+Command Output: [INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.fasterxml.jackson.core:jackson-databind >-------------
+[INFO] Building jackson-databind 2.8.10-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[WARNING] The artifact javax.measure:jsr-275:jar:1.0.0 has been relocated to javax.measure:jsr-275:jar:0.9.1
+[INFO] 
+[INFO] --- dependency:3.6.1:build-classpath (default-cli) @ jackson-databind ---
+[INFO] Skipped writing classpath file '/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version/cp.txt'.  No changes found.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.873 s
+[INFO] Finished at: 2024-03-31T01:35:11-05:00
+[INFO] ------------------------------------------------------------------------
+
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version...
+Command Output: [INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.fasterxml.jackson.core:jackson-databind >-------------
+[INFO] Building jackson-databind 2.8.10-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[WARNING] The artifact javax.measure:jsr-275:jar:1.0.0 has been relocated to javax.measure:jsr-275:jar:0.9.1
+[INFO] 
+[INFO] --- clean:2.5:clean (default-clean) @ jackson-databind ---
+[INFO] Deleting /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/target
+[INFO] 
+[INFO] --- enforcer:1.3.1:enforce (enforce-java) @ jackson-databind ---
+[INFO] 
+[INFO] --- build-helper:1.7:add-source (add-generated-sources) @ jackson-databind ---
+[INFO] Source directory: /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.2:replace (process-packageVersion) @ jackson-databind ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ jackson-databind ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.2:compile (default-compile) @ jackson-databind ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 398 source files to /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.430 s
+[INFO] Finished at: 2024-03-31T01:35:14-05:00
+[INFO] ------------------------------------------------------------------------
+
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version...
+Command Output: [INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.fasterxml.jackson.core:jackson-databind >-------------
+[INFO] Building jackson-databind 2.8.10-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[WARNING] The artifact javax.measure:jsr-275:jar:1.0.0 has been relocated to javax.measure:jsr-275:jar:0.9.1
+[INFO] 
+[INFO] --- dependency:3.6.1:build-classpath (default-cli) @ jackson-databind ---
+[INFO] Skipped writing classpath file '/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/cp.txt'.  No changes found.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.731 s
+[INFO] Finished at: 2024-03-31T01:35:16-05:00
+[INFO] ------------------------------------------------------------------------
+
+Generating tests for ['com.fasterxml.jackson.databind.ser.std.StdKeySerializers\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version...
+Command Output: Randoop for Java version 4.3.2.
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=30
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2024-03-31T06:35:16.697Z     16.8M used)
+Progress update: steps=1000, test inputs generated=933, failing inputs=0      (2024-03-31T06:35:25.191Z     68.5M used)
+Progress update: steps=2000, test inputs generated=1858, failing inputs=0      (2024-03-31T06:35:35.294Z     179M used)
+Progress update: steps=3000, test inputs generated=2764, failing inputs=0      (2024-03-31T06:35:44.718Z     543M used)
+Progress update: steps=4000, test inputs generated=3660, failing inputs=0      (2024-03-31T06:35:53.990Z     552M used)
+Progress update: steps=5000, test inputs generated=4517, failing inputs=0      (2024-03-31T06:36:03.167Z     397M used)
+Progress update: steps=6000, test inputs generated=5360, failing inputs=0      (2024-03-31T06:36:12.072Z     186M used)
+Progress update: steps=6503, test inputs generated=5776, failing inputs=0      (2024-03-31T06:36:16.705Z     135M used)
+Progress update: steps=7000, test inputs generated=6200, failing inputs=0      (2024-03-31T06:36:21.342Z     162M used)
+Progress update: steps=8000, test inputs generated=7020, failing inputs=0      (2024-03-31T06:36:30.504Z     161M used)
+Progress update: steps=9000, test inputs generated=7838, failing inputs=0      (2024-03-31T06:36:39.461Z     173M used)
+Progress update: steps=10000, test inputs generated=8656, failing inputs=0      (2024-03-31T06:36:48.490Z     174M used)
+Progress update: steps=11000, test inputs generated=9451, failing inputs=0      (2024-03-31T06:36:57.181Z     215M used)
+Progress update: steps=12000, test inputs generated=10244, failing inputs=0      (2024-03-31T06:37:06.174Z     211M used)
+Progress update: steps=13000, test inputs generated=11027, failing inputs=0      (2024-03-31T06:37:16.202Z     125M used)
+Progress update: steps=13064, test inputs generated=11069, failing inputs=0      (2024-03-31T06:37:16.710Z     327M used)
+Progress update: steps=14000, test inputs generated=11790, failing inputs=0      (2024-03-31T06:37:25.047Z     371M used)
+Progress update: steps=15000, test inputs generated=12568, failing inputs=0      (2024-03-31T06:37:33.991Z     598M used)
+Progress update: steps=16000, test inputs generated=13350, failing inputs=0      (2024-03-31T06:37:43.103Z     711M used)
+Progress update: steps=17000, test inputs generated=14119, failing inputs=0      (2024-03-31T06:37:51.741Z     347M used)
+Progress update: steps=18000, test inputs generated=14889, failing inputs=0      (2024-03-31T06:38:00.357Z     533M used)
+Progress update: steps=19000, test inputs generated=15653, failing inputs=0      (2024-03-31T06:38:08.968Z     706M used)
+Progress update: steps=19882, test inputs generated=16331, failing inputs=0      (2024-03-31T06:38:16.708Z     83.2M used)
+Normal method executions: 24837344
+Exceptional method executions: 5087
+
+Average method execution time (normal termination):      1.98e-05
+Average method execution time (exceptional termination): 0.0261
+Approximate memory usage 83.2M
+Explorer = ForwardGenerator(steps: 19882, null steps: 3551, num_sequences_generated: 16331;
+    allSequences: 16331, regresson seqs: 482, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 15849;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 259 regression sequences.
+
+Regression test output:
+Regression test count: 259
+Writing regression JUnit tests...
+                                                                                                                                                                                             Created file /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/RegressionTest0.java
+Created file /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 15848).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
+
+Command Output: Randoop for Java version 4.3.2.
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=30
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2024-03-31T06:38:17.671Z     16.7M used)
+Progress update: steps=1000, test inputs generated=933, failing inputs=0      (2024-03-31T06:38:26.261Z     245M used)
+Progress update: steps=2000, test inputs generated=1858, failing inputs=0      (2024-03-31T06:38:34.474Z     189M used)
+Progress update: steps=3000, test inputs generated=2764, failing inputs=0      (2024-03-31T06:38:43.424Z     264M used)
+Progress update: steps=4000, test inputs generated=3660, failing inputs=0      (2024-03-31T06:38:52.320Z     273M used)
+Progress update: steps=5000, test inputs generated=4517, failing inputs=0      (2024-03-31T06:39:01.386Z     189M used)
+Progress update: steps=6000, test inputs generated=5360, failing inputs=0      (2024-03-31T06:39:10.271Z     55.9M used)
+Progress update: steps=6801, test inputs generated=6029, failing inputs=0      (2024-03-31T06:39:17.685Z     264M used)
+Progress update: steps=7000, test inputs generated=6200, failing inputs=0      (2024-03-31T06:39:19.540Z     195M used)
+Progress update: steps=8000, test inputs generated=7020, failing inputs=0      (2024-03-31T06:39:28.378Z     64.7M used)
+Progress update: steps=9000, test inputs generated=7838, failing inputs=0      (2024-03-31T06:39:37.029Z     77.1M used)
+Progress update: steps=10000, test inputs generated=8656, failing inputs=0      (2024-03-31T06:39:45.917Z     125M used)
+Progress update: steps=11000, test inputs generated=9451, failing inputs=0      (2024-03-31T06:39:54.593Z     95.2M used)
+Progress update: steps=12000, test inputs generated=10244, failing inputs=0      (2024-03-31T06:40:03.312Z     229M used)
+Progress update: steps=13000, test inputs generated=11027, failing inputs=0      (2024-03-31T06:40:12.130Z     161M used)
+Progress update: steps=13627, test inputs generated=11504, failing inputs=0      (2024-03-31T06:40:17.688Z     450M used)
+Progress update: steps=14000, test inputs generated=11790, failing inputs=0      (2024-03-31T06:40:20.836Z     95.4M used)
+Progress update: steps=15000, test inputs generated=12568, failing inputs=0      (2024-03-31T06:40:29.799Z     487M used)
+Progress update: steps=16000, test inputs generated=13350, failing inputs=0      (2024-03-31T06:40:39.374Z     515M used)
+Progress update: steps=17000, test inputs generated=14119, failing inputs=0      (2024-03-31T06:40:49.547Z     93.6M used)
+Progress update: steps=18000, test inputs generated=14889, failing inputs=0      (2024-03-31T06:41:04.573Z     221M used)
+Progress update: steps=19000, test inputs generated=15653, failing inputs=0      (2024-03-31T06:41:15.165Z     408M used)
+Progress update: steps=19251, test inputs generated=15834, failing inputs=0      (2024-03-31T06:41:17.679Z     86.0M used)
+Normal method executions: 23900931
+Exceptional method executions: 4945
+
+Average method execution time (normal termination):      2.03e-05
+Average method execution time (exceptional termination): 0.0263
+Approximate memory usage 86.0M
+Explorer = ForwardGenerator(steps: 19251, null steps: 3417, num_sequences_generated: 15834;
+    allSequences: 15834, regresson seqs: 470, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 15364;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 253 regression sequences.
+
+Regression test output:
+Regression test count: 253
+Writing regression JUnit tests...
+                                                                                                                                                                                  Created file /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/RegressionTest0.java
+Created file /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 15363).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
+
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.ser.std.StdKeySerializers\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version...
+Command Output: Randoop for Java version 4.3.2.
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=30
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2024-03-31T06:41:18.889Z     16.7M used)
+Progress update: steps=1000, test inputs generated=933, failing inputs=0      (2024-03-31T06:41:29.177Z     103M used)
+Progress update: steps=2000, test inputs generated=1858, failing inputs=0      (2024-03-31T06:41:38.756Z     90.2M used)
+Progress update: steps=3000, test inputs generated=2764, failing inputs=0      (2024-03-31T06:41:55.381Z     304M used)
+Progress update: steps=4000, test inputs generated=3660, failing inputs=0      (2024-03-31T06:42:17.214Z     264M used)
+Progress update: steps=4072, test inputs generated=3723, failing inputs=0      (2024-03-31T06:42:18.904Z     507M used)
+Progress update: steps=5000, test inputs generated=4517, failing inputs=0      (2024-03-31T06:42:39.353Z     363M used)
+Progress update: steps=6000, test inputs generated=5360, failing inputs=0      (2024-03-31T06:42:57.057Z     507M used)
+Progress update: steps=7000, test inputs generated=6200, failing inputs=0      (2024-03-31T06:43:18.686Z     56.7M used)
+Progress update: steps=7011, test inputs generated=6209, failing inputs=0      (2024-03-31T06:43:18.909Z     214M used)
+Progress update: steps=8000, test inputs generated=7020, failing inputs=0      (2024-03-31T06:43:44.078Z     609M used)
+Progress update: steps=9000, test inputs generated=7838, failing inputs=0      (2024-03-31T06:44:05.939Z     88.5M used)
+Progress update: steps=9619, test inputs generated=8351, failing inputs=0      (2024-03-31T06:44:18.906Z     86.9M used)
+Normal method executions: 10678302
+Exceptional method executions: 2763
+
+Average method execution time (normal termination):      3.96e-05
+Average method execution time (exceptional termination): 0.0530
+Approximate memory usage 86.9M
+Explorer = ForwardGenerator(steps: 9619, null steps: 1268, num_sequences_generated: 8351;
+    allSequences: 8351, regresson seqs: 286, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 8065;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
+
+No error-revealing tests to output.
+                                                                                                                                                                                                       
+About to look for failing assertions in 163 regression sequences.
+
+Regression test output:
+Regression test count: 163
+Writing regression JUnit tests...
+Created file /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/RegressionTest0.java
+Created file /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 8064).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
+
+^CTraceback (most recent call last):
+  File "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/run_randoop.py", line 111, in <module>
+    process_all_projects(bears_root, randoop_path)
+  File "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/run_randoop.py", line 104, in process_all_projects
+    process_single_project(project_path, randoop_path, diff_file)
+  File "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/run_randoop.py", line 85, in process_single_project
+    generate_tests(cp_patched, modified_classes, patched_version_path, randoop_path)
+  File "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/run_randoop.py", line 58, in generate_tests
+    output = run_command(command)
+  File "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/run_randoop.py", line 6, in run_command
+    stdout, stderr = process.communicate()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1134, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1979, in _communicate
+    ready = selector.select(timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+jingyaogu@Jingyaos-MacBook-Air Bears % python3 run_randoop.py
+Processing project: Bears-25
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.ser.std.StdKeySerializers\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.ser.std.StdKeySerializers\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-25/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-23
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-23
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-23/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-23/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-23/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-23/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.util.StdDateFormat\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-23/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.util.StdDateFormat\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-23/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-24
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-24
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-24/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-24/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-24/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-24/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.type.ResolvedRecursiveType\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-24/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.type.ResolvedRecursiveType\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-24/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-142
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Patched-Version...
+Generating tests for ['org.activiti.engine.impl.history.handler.ActivityInstanceEndHandler\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Buggy-Version...
+Error-revealing tests were generated.
+Generating tests for ['org.activiti.engine.impl.history.handler.ActivityInstanceEndHandler\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Patched-Version...
+Error-revealing tests were generated.
+Processing project: Bears-15
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-15
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-15/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-15/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-15/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-15/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector\n', 'com.fasterxml.jackson.databind.introspect.ObjectIdInfo\n', 'com.fasterxml.jackson.databind.ser.std.BeanSerializerBase\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-15/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector\n', 'com.fasterxml.jackson.databind.introspect.ObjectIdInfo\n', 'com.fasterxml.jackson.databind.ser.std.BeanSerializerBase\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-15/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-120
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-120
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-120/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-120/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-120/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-120/Patched-Version...
+Generating tests for ['org.traccar.protocol.AplicomFrameDecoder\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-120/Buggy-Version...
+Error-revealing tests were generated.
+Generating tests for ['org.traccar.protocol.AplicomFrameDecoder\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-120/Patched-Version...
+No error-revealing tests were found.
+Skipping .DS_Store, as it is not a valid project directory or lacks a Diff file.
+Skipping clean.py, as it is not a valid project directory or lacks a Diff file.
+Skipping runCSV.py, as it is not a valid project directory or lacks a Diff file.
+Skipping run_randoop.py, as it is not a valid project directory or lacks a Diff file.
+Processing project: Bears-211
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-211
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-211/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-211/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-211/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-211/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.dataformat.cbor.CBORFactory\n', 'com.fasterxml.jackson.dataformat.smile.SmileFactory\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-211/Buggy-Version...
+Error-revealing tests were generated.
+Generating tests for ['com.fasterxml.jackson.dataformat.cbor.CBORFactory\n', 'com.fasterxml.jackson.dataformat.smile.SmileFactory\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-211/Patched-Version...
+Error-revealing tests were generated.
+Processing project: Bears-7
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-7
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-7/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-7/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-7/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-7/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.deser.std.EnumDeserializer\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-7/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.deser.std.EnumDeserializer\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-7/Patched-Version...
+No error-revealing tests were found.
+Skipping visualize.py, as it is not a valid project directory or lacks a Diff file.
+Processing project: Bears-168
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-168
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-168/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-168/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-168/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-168/Patched-Version...
+Generating tests for ['io.enmasse.controller.api.DefaultExceptionMapper\n', 'io.enmasse.address.model.v1.AddressSpaceV1Deserializer\n', 'io.enmasse.address.model.v1.AddressV1Deserializer\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-168/Buggy-Version...
+Error-revealing tests were generated.
+Generating tests for ['io.enmasse.controller.api.DefaultExceptionMapper\n', 'io.enmasse.address.model.v1.AddressSpaceV1Deserializer\n', 'io.enmasse.address.model.v1.AddressV1Deserializer\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-168/Patched-Version...
+Error-revealing tests were generated.
+Processing project: Bears-6
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector\n', 'com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector\n', 'com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-166
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version...
+Generating tests for ['io.enmasse.address.model.Status\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Buggy-Version...
+Error-revealing tests were generated.
+Generating tests for ['io.enmasse.address.model.Status\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-166/Patched-Version...
+Error-revealing tests were generated.
+Skipping runRegressionTest.py, as it is not a valid project directory or lacks a Diff file.
+Processing project: Bears-140
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-140
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-140/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-140/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-140/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-140/Patched-Version...
+Generating tests for ['edu.harvard.h2ms.service.utils.H2msRestUtils\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-140/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['edu.harvard.h2ms.service.utils.H2msRestUtils\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-140/Patched-Version...
+No error-revealing tests were found.
+Skipping results, as it is not a valid project directory or lacks a Diff file.
+Processing project: Bears-17
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-17
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-17/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-17/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-17/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-17/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-17/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-17/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-21
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-21
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-21/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-21/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-21/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-21/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-21/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-21/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-19
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-19
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-19/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-19/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-19/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-19/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.deser.BeanDeserializerFactory\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-19/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.deser.BeanDeserializerFactory\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-19/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-26
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-26
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-26/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-26/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-26/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-26/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-26/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-26/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-18
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-18
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-18/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-18/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-18/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-18/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-18/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-18/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-20
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.deser.std.FromStringDeserializer\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.deser.std.FromStringDeserializer\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20/Patched-Version...
+No error-revealing tests were found.
+Skipping basic.py, as it is not a valid project directory or lacks a Diff file.
+Processing project: Bears-16
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-16
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-16/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-16/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-16/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-16/Patched-Version...
+Generating tests for ['com.fasterxml.jackson.databind.SerializerProvider\n', 'com.fasterxml.jackson.databind.ser.BeanSerializerBuilder\n', 'com.fasterxml.jackson.databind.ser.BeanSerializerFactory\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-16/Buggy-Version...
+No error-revealing tests were found.
+Generating tests for ['com.fasterxml.jackson.databind.SerializerProvider\n', 'com.fasterxml.jackson.databind.ser.BeanSerializerBuilder\n', 'com.fasterxml.jackson.databind.ser.BeanSerializerFactory\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-16/Patched-Version...
+No error-revealing tests were found.
+Processing project: Bears-141
+Processing project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-141
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-141/Buggy-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-141/Buggy-Version...
+Compiling project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-141/Patched-Version...
+Generating dependencies for project in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-141/Patched-Version...
+Generating tests for ['edu.harvard.h2ms.domain.core.User\n', 'edu.harvard.h2ms.service.UserDetailsServiceImpl\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-141/Buggy-Version...
+Error-revealing tests were generated.
+Generating tests for ['edu.harvard.h2ms.domain.core.User\n', 'edu.harvard.h2ms.service.UserDetailsServiceImpl\n'] in /Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-141/Patched-Version...
+No error-revealing tests were found.
+Skipping bug_metrics.csv, as it is not a valid project directory or lacks a Diff file.
+Skipping script.py, as it is not a valid project directory or lacks a Diff file.
+jingyaogu@Jingyaos-MacBook-Air Bears % 
