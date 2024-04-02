@@ -75,12 +75,20 @@ mvn dependency:build-classpath -Dmdep.outputFile=cp.txt
 ### Step4: Use randoop to auto generate the tests:
 ```bash
 java -classpath "$(cat cp.txt):/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar:/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20/Patched-Version/target/classes/" randoop.main.Main gentests --testclass=com.fasterxml.jackson.databind.deser.std.FromStringDeserializer
+
 ```
 
 ```bash
 java -classpath "$(cat cp.txt):/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar:/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-20/Buggy-Version/target/classes/" randoop.main.Main gentests --testclass=com.fasterxml.jackson.databind.deser.std.FromStringDeserializer
-```
 
+java -classpath "/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar:/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-168/Buggy-Version/address-controller/target/classes" randoop.main.Main gentests --testclass=io.enmasse.controller.api.DefaultExceptionMapper
+
+java -classpath "/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar:/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Buggy-Version/modules/activiti-engine/target/classes" randoop.main.Main gentests --testclass=org.activiti.engine.impl.history.handler.ActivityInstanceEndHandler
+
+java -classpath "/Users/jingyaogu/Desktop/randoop-4.3.2/randoop-all-4.3.2.jar:/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-211/Patched-Version/cbor/target/classes" randoop.main.Main gentests --testclass=com.fasterxml.jackson/dataformat/cbor/CBORFactory
+Bears/Bears-211/Patched-Version/cbor/target/classes/com/fasterxml/jackson/dataformat/cbor/CBORFactory.class
+
+```
 
 ### For patched version:
 Results are: regression tests on the patched version that fail on the buggy version. Note that here, we are looking for test failures, NOT test errors. Test errors may happen because a code in the patched version does not exist in the buggy version. 
@@ -93,12 +101,18 @@ Results are: error revealing tests on the buggy version that pass on the patched
 #### Run evosuite:
 ```bash
 java -jar /Users/jingyaogu/Desktop/evosuite-1.0.6.jar -class com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector -projectCP "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6/Patched-Version/target/classes/:$(cat cp.txt)"
+
+java -jar /Users/jingyaogu/Desktop/evosuite-1.0.6.jar -class com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector -projectCP "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-6/Buggy-Version/target/classes/:$(cat cp.txt)"
+
+java -jar /Users/jingyaogu/Desktop/evosuite-1.0.6.jar -class org.activiti.engine.impl.history.handler.ActivityInstanceEndHandler -projectCP "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Patched-Version/target/classes/:$(cat cp.txt)"
+
+java -jar /Users/jingyaogu/Desktop/evosuite-1.0.6.jar -class org.activiti.engine.impl.history.handler.ActivityInstanceEndHandler -projectCP "/Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-142/Patched-Version/modules/activiti-engine/target/classes:$(cat cp.txt)"
+
 ```
 After running the command, evosuite should generate tests that can be seen under evosuite-test folder. Copy those tests to src/java folders where the test belongs. Then run the following to have the evosuite run time installed.
 
 ```bash
-mvn install:install-file -Dfile=/path/to/evosuite-standalone-runtime-1.0.6.jar -DgroupId=org.evosuite -DartifactId=evosuite-standalone-runtime -Dversion=1.0.6 -Dpackaging=jar
-
+mvn install:install-file -Dfile=/Users/jingyaogu/Desktop/evosuite-standalone-runtime-1.0.6.jar -DgroupId=org.evosuite -DartifactId=evosuite-standalone-runtime -Dversion=1.0.6 -Dpackaging=jar
 ```
 Then add dependency to pom.xml
 
