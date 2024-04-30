@@ -149,51 +149,505 @@ file:///Users/jingyaogu/Desktop/CS527-Team-15/Bears/Bears-16/Buggy-Version/targe
 ### Step3: Find the corresponding row number of the statements removed or modified in that class
 
 Also find the total number of failed tests, total number of passed tests, and the Id of failed tests.
+This is for Bears-19
 ```
-const totalFail = 5;
-const totalPass = 1684;
-const failedTestId = 243;
+const totalFail = 4; // Assuming this still represents the total number of failed tests
+const totalPass = 1719; // Total number of passed tests
+const failedTestIds = [68, 416, 543, 1339]; // Array of failed test IDs
 
-// 创建一个数组用于存储每一行的分数及其行号
+// Create an array to store the score and line number of each covered line
+const lineScores = [];
+
+for (let i = 3; i <= 907; i++) {
+    var testsCoveringLine = clover.srcFileLines[i];
+    if (testsCoveringLine.length === 0) {
+        continue; // If no tests cover this line, skip it
+    }
+    let fails = 0; // Counter for the number of failing tests
+    let passes = 0; // Counter for the number of passing tests
+    
+    // Loop through tests covering the current line
+    testsCoveringLine.forEach(test => {
+        if (failedTestIds.includes(test)) {
+            fails++; // Increment fail counter if test ID is in the list of failed test IDs
+        } else {
+            passes++; // Otherwise, increment pass counter
+        }
+    });
+    
+    // Calculate the suspiciousness score
+    const suspiciousness = fails / totalFail / (fails / totalFail + passes / totalPass);
+    
+    if (suspiciousness >= 0) { // Only record lines with a non-zero suspiciousness score
+        lineScores.push({ line: i, score: suspiciousness });
+    }
+}
+
+// Sort by suspiciousness score in descending order
+lineScores.sort((a, b) => b.score - a.score);
+
+// Assign ranks considering ties, only for non-zero scores
+let currentRank = 1;
+let previousScore = -1; // Initialize to a non-valid score
+let countOfLinesAbove = 0;
+
+lineScores.forEach((item, index) => {
+    if (item.score === previousScore) {
+        // Same score as previous, assign the same rank
+        item.rank = currentRank;
+    } else {
+        // New score, update rank based on the actual index of non-zero scores
+        currentRank = countOfLinesAbove + 1;
+        item.rank = currentRank;
+        previousScore = item.score;
+    }
+    countOfLinesAbove++;
+});
+
+// Find the entry for Line 1181 and print its rank
+const lineOfInterest = 495;
+const entry = lineScores.find(item => item.line === lineOfInterest);
+
+// Print each line's score, suspiciousness, and rank for non-zero scores
+console.log("Line Scores, Suspiciousness, and Ranks:");
+lineScores.forEach(item => {
+    if (item.score > 0) {
+        console.log(`Line ${item.line}: Suspiciousness Score: ${item.score.toFixed(4)}, Rank: ${item.rank}`);
+    }
+});
+
+// Print the rank of Line 1181
+if (entry) {
+    console.log(`Rank of Line ${lineOfInterest}: ${entry.rank}`);
+} else {
+    console.log(`Line ${lineOfInterest} not found in the coverage data.`);
+}
+
+// Count how many scores have non-zero suspiciousness
+const nonZeroSuspiciousCount = lineScores.filter(item => item.score > 0).length;
+
+// Print the count of non-zero suspiciousness
+console.log(`Number of lines with non-zero suspiciousness: ${nonZeroSuspiciousCount}`);
+```
+
+For Bears 6:
+```
+const totalFail = 5; // Assuming this still represents the total number of failed tests
+const totalPass = 1684; // Total number of passed tests
+const failedTestIds = [423, 431, 1050, 1494, 1547]; // Array of failed test IDs
+
+// Create an array to store the score and line number of each covered line
 const lineScores = [];
 
 for (let i = 3; i <= 1078; i++) {
     var testsCoveringLine = clover.srcFileLines[i];
     if (testsCoveringLine.length === 0) {
-        continue; // 如果没有测试覆盖这一行，跳过
+        continue; // If no tests cover this line, skip it
     }
-    let fails = 0; // 计数器，用于统计失败的测试数量
-    let passes = 0; // 计数器，用于统计通过的测试数量
+    let fails = 0; // Counter for the number of failing tests
+    let passes = 0; // Counter for the number of passing tests
     
-    // 遍历覆盖当前行的测试用例
+    // Loop through tests covering the current line
     testsCoveringLine.forEach(test => {
-        if (test === failedTestId) {
-            fails++; // 如果测试ID与失败的测试ID相匹配，失败计数增加
+        if (failedTestIds.includes(test)) {
+            fails++; // Increment fail counter if test ID is in the list of failed test IDs
         } else {
-            passes++; // 否则，通过计数增加
+            passes++; // Otherwise, increment pass counter
         }
     });
     
-    // 计算可疑度分数
+    // Calculate the suspiciousness score
     const suspiciousness = fails / totalFail / (fails / totalFail + passes / totalPass);
     
-    if (suspiciousness > 0) {
-        // 只记录有可疑度分数的行
+    if (suspiciousness >= 0) { // Only record lines with a non-zero suspiciousness score
         lineScores.push({ line: i, score: suspiciousness });
     }
 }
 
-// 按可疑度分数降序排序
+// Sort by suspiciousness score in descending order
 lineScores.sort((a, b) => b.score - a.score);
 
-// 找到第219行的排名
-const rankOfLine219 = lineScores.findIndex(item => item.line === 730) + 1;
+// Assign ranks considering ties, only for non-zero scores
+let currentRank = 1;
+let previousScore = -1; // Initialize to a non-valid score
+let countOfLinesAbove = 0;
 
-// 打印每一行的分数和第219行的排名
-console.log("Line Scores and Suspiciousness:");
-lineScores.forEach(item => console.log(`Line ${item.line}: Suspiciousness Score: ${item.score.toFixed(4)}`));
-console.log(`Rank of Line 730: ${rankOfLine219}`);
+lineScores.forEach((item, index) => {
+    if (item.score === previousScore) {
+        // Same score as previous, assign the same rank
+        item.rank = currentRank;
+    } else {
+        // New score, update rank based on the actual index of non-zero scores
+        currentRank = countOfLinesAbove + 1;
+        item.rank = currentRank;
+        previousScore = item.score;
+    }
+    countOfLinesAbove++;
+});
+
+// Find the entry for Line 1181 and print its rank
+const lineOfInterest = 730;
+const entry = lineScores.find(item => item.line === lineOfInterest);
+
+// Print each line's score, suspiciousness, and rank for non-zero scores
+console.log("Line Scores, Suspiciousness, and Ranks:");
+lineScores.forEach(item => {
+    if (item.score > 0) {
+        console.log(`Line ${item.line}: Suspiciousness Score: ${item.score.toFixed(4)}, Rank: ${item.rank}`);
+    }
+});
+
+// Print the rank of Line 1181
+if (entry) {
+    console.log(`Rank of Line ${lineOfInterest}: ${entry.rank}`);
+} else {
+    console.log(`Line ${lineOfInterest} not found in the coverage data.`);
+}
+
+// Count how many scores have non-zero suspiciousness
+const nonZeroSuspiciousCount = lineScores.filter(item => item.score > 0).length;
+
+// Print the count of non-zero suspiciousness
+console.log(`Number of lines with non-zero suspiciousness: ${nonZeroSuspiciousCount}`);
 ```
+
+For Bears-20:
+```
+const totalFail = 4; // Assuming this still represents the total number of failed tests
+const totalPass = 1734; // Total number of passed tests
+const failedTestIds = [1066, 1698]; // Array of failed test IDs
+
+// Create an array to store the score and line number of each covered line
+const lineScores = [];
+
+for (let i = 3; i <= 310; i++) {
+    var testsCoveringLine = clover.srcFileLines[i];
+    if (testsCoveringLine.length === 0) {
+        continue; // If no tests cover this line, skip it
+    }
+    let fails = 0; // Counter for the number of failing tests
+    let passes = 0; // Counter for the number of passing tests
+    
+    // Loop through tests covering the current line
+    testsCoveringLine.forEach(test => {
+        if (failedTestIds.includes(test)) {
+            fails++; // Increment fail counter if test ID is in the list of failed test IDs
+        } else {
+            passes++; // Otherwise, increment pass counter
+        }
+    });
+    
+    // Calculate the suspiciousness score
+    const suspiciousness = fails / totalFail / (fails / totalFail + passes / totalPass);
+    
+    if (suspiciousness >= 0) { // Only record lines with a non-zero suspiciousness score
+        lineScores.push({ line: i, score: suspiciousness });
+    }
+}
+
+// Sort by suspiciousness score in descending order
+lineScores.sort((a, b) => b.score - a.score);
+
+// Assign ranks considering ties, only for non-zero scores
+let currentRank = 1;
+let previousScore = -1; // Initialize to a non-valid score
+let countOfLinesAbove = 0;
+
+lineScores.forEach((item, index) => {
+    if (item.score === previousScore) {
+        // Same score as previous, assign the same rank
+        item.rank = currentRank;
+    } else {
+        // New score, update rank based on the actual index of non-zero scores
+        currentRank = countOfLinesAbove + 1;
+        item.rank = currentRank;
+        previousScore = item.score;
+    }
+    countOfLinesAbove++;
+});
+
+// Find the entry for Line 1181 and print its rank
+const lineOfInterest = 115;
+const entry = lineScores.find(item => item.line === lineOfInterest);
+
+// Print each line's score, suspiciousness, and rank for non-zero scores
+console.log("Line Scores, Suspiciousness, and Ranks:");
+lineScores.forEach(item => {
+    if (item.score > 0) {
+        console.log(`Line ${item.line}: Suspiciousness Score: ${item.score.toFixed(4)}, Rank: ${item.rank}`);
+    }
+});
+
+// Print the rank of Line 1181
+if (entry) {
+    console.log(`Rank of Line ${lineOfInterest}: ${entry.rank}`);
+} else {
+    console.log(`Line ${lineOfInterest} not found in the coverage data.`);
+}
+
+// Count how many scores have non-zero suspiciousness
+const nonZeroSuspiciousCount = lineScores.filter(item => item.score > 0).length;
+
+// Print the count of non-zero suspiciousness
+console.log(`Number of lines with non-zero suspiciousness: ${nonZeroSuspiciousCount}`);
+```
+
+For Bears-7:
+```
+const totalFail = 5; // Assuming this still represents the total number of failed tests
+const totalPass = 1687; // Total number of passed tests
+const failedTestIds = [327, 1230]; // Array of failed test IDs
+
+// Create an array to store the score and line number of each covered line
+const lineScores = [];
+
+for (let i = 3; i <= 235; i++) {
+    var testsCoveringLine = clover.srcFileLines[i];
+    if (testsCoveringLine.length === 0) {
+        continue; // If no tests cover this line, skip it
+    }
+    let fails = 0; // Counter for the number of failing tests
+    let passes = 0; // Counter for the number of passing tests
+    
+    // Loop through tests covering the current line
+    testsCoveringLine.forEach(test => {
+        if (failedTestIds.includes(test)) {
+            fails++; // Increment fail counter if test ID is in the list of failed test IDs
+        } else {
+            passes++; // Otherwise, increment pass counter
+        }
+    });
+    
+    // Calculate the suspiciousness score
+    const suspiciousness = fails / totalFail / (fails / totalFail + passes / totalPass);
+    
+    if (suspiciousness >= 0) { // Only record lines with a non-zero suspiciousness score
+        lineScores.push({ line: i, score: suspiciousness });
+    }
+}
+
+// Sort by suspiciousness score in descending order
+lineScores.sort((a, b) => b.score - a.score);
+
+// Assign ranks considering ties, only for non-zero scores
+let currentRank = 1;
+let previousScore = -1; // Initialize to a non-valid score
+let countOfLinesAbove = 0;
+
+lineScores.forEach((item, index) => {
+    if (item.score === previousScore) {
+        // Same score as previous, assign the same rank
+        item.rank = currentRank;
+    } else {
+        // New score, update rank based on the actual index of non-zero scores
+        currentRank = countOfLinesAbove + 1;
+        item.rank = currentRank;
+        previousScore = item.score;
+    }
+    countOfLinesAbove++;
+});
+
+// Find the entry for Line 1181 and print its rank
+const lineOfInterest = 170;
+const entry = lineScores.find(item => item.line === lineOfInterest);
+
+// Print each line's score, suspiciousness, and rank for non-zero scores
+console.log("Line Scores, Suspiciousness, and Ranks:");
+lineScores.forEach(item => {
+    if (item.score > 0) {
+        console.log(`Line ${item.line}: Suspiciousness Score: ${item.score.toFixed(4)}, Rank: ${item.rank}`);
+    }
+});
+
+// Print the rank of Line 1181
+if (entry) {
+    console.log(`Rank of Line ${lineOfInterest}: ${entry.rank}`);
+} else {
+    console.log(`Line ${lineOfInterest} not found in the coverage data.`);
+}
+
+// Count how many scores have non-zero suspiciousness
+const nonZeroSuspiciousCount = lineScores.filter(item => item.score > 0).length;
+
+// Print the count of non-zero suspiciousness
+console.log(`Number of lines with non-zero suspiciousness: ${nonZeroSuspiciousCount}`);
+```
+
+
+
+
+
+
+
+
+
+For Bears-26:
+```
+const totalFail = 4; // Assuming this still represents the total number of failed tests
+const totalPass = 1754; // Total number of passed tests
+const failedTestIds = [327, 1230]; // Array of failed test IDs
+
+// Create an array to store the score and line number of each covered line
+const lineScores = [];
+
+for (let i = 3; i <= 235; i++) {
+    var testsCoveringLine = clover.srcFileLines[i];
+    if (testsCoveringLine.length === 0) {
+        continue; // If no tests cover this line, skip it
+    }
+    let fails = 0; // Counter for the number of failing tests
+    let passes = 0; // Counter for the number of passing tests
+    
+    // Loop through tests covering the current line
+    testsCoveringLine.forEach(test => {
+        if (failedTestIds.includes(test)) {
+            fails++; // Increment fail counter if test ID is in the list of failed test IDs
+        } else {
+            passes++; // Otherwise, increment pass counter
+        }
+    });
+    
+    // Calculate the suspiciousness score
+    const suspiciousness = fails / totalFail / (fails / totalFail + passes / totalPass);
+    
+    if (suspiciousness >= 0) { // Only record lines with a non-zero suspiciousness score
+        lineScores.push({ line: i, score: suspiciousness });
+    }
+}
+
+// Sort by suspiciousness score in descending order
+lineScores.sort((a, b) => b.score - a.score);
+
+// Assign ranks considering ties, only for non-zero scores
+let currentRank = 1;
+let previousScore = -1; // Initialize to a non-valid score
+let countOfLinesAbove = 0;
+
+lineScores.forEach((item, index) => {
+    if (item.score === previousScore) {
+        // Same score as previous, assign the same rank
+        item.rank = currentRank;
+    } else {
+        // New score, update rank based on the actual index of non-zero scores
+        currentRank = countOfLinesAbove + 1;
+        item.rank = currentRank;
+        previousScore = item.score;
+    }
+    countOfLinesAbove++;
+});
+
+// Find the entry for Line 1181 and print its rank
+const lineOfInterest = 170;
+const entry = lineScores.find(item => item.line === lineOfInterest);
+
+// Print each line's score, suspiciousness, and rank for non-zero scores
+console.log("Line Scores, Suspiciousness, and Ranks:");
+lineScores.forEach(item => {
+    if (item.score > 0) {
+        console.log(`Line ${item.line}: Suspiciousness Score: ${item.score.toFixed(4)}, Rank: ${item.rank}`);
+    }
+});
+
+// Print the rank of Line 1181
+if (entry) {
+    console.log(`Rank of Line ${lineOfInterest}: ${entry.rank}`);
+} else {
+    console.log(`Line ${lineOfInterest} not found in the coverage data.`);
+}
+
+// Count how many scores have non-zero suspiciousness
+const nonZeroSuspiciousCount = lineScores.filter(item => item.score > 0).length;
+
+// Print the count of non-zero suspiciousness
+console.log(`Number of lines with non-zero suspiciousness: ${nonZeroSuspiciousCount}`);
+```
+
+For bears-140
+```
+const totalFail = 4; // Assuming this still represents the total number of failed tests
+const totalPass = 1754; // Total number of passed tests
+const failedTestIds = [327, 1230]; // Array of failed test IDs
+
+// Create an array to store the score and line number of each covered line
+const lineScores = [];
+
+for (let i = 3; i <= 235; i++) {
+    var testsCoveringLine = clover.srcFileLines[i];
+    if (testsCoveringLine.length === 0) {
+        continue; // If no tests cover this line, skip it
+    }
+    let fails = 0; // Counter for the number of failing tests
+    let passes = 0; // Counter for the number of passing tests
+    
+    // Loop through tests covering the current line
+    testsCoveringLine.forEach(test => {
+        if (failedTestIds.includes(test)) {
+            fails++; // Increment fail counter if test ID is in the list of failed test IDs
+        } else {
+            passes++; // Otherwise, increment pass counter
+        }
+    });
+    
+    // Calculate the suspiciousness score
+    const suspiciousness = fails / totalFail / (fails / totalFail + passes / totalPass);
+    
+    if (suspiciousness >= 0) { // Only record lines with a non-zero suspiciousness score
+        lineScores.push({ line: i, score: suspiciousness });
+    }
+}
+
+// Sort by suspiciousness score in descending order
+lineScores.sort((a, b) => b.score - a.score);
+
+// Assign ranks considering ties, only for non-zero scores
+let currentRank = 1;
+let previousScore = -1; // Initialize to a non-valid score
+let countOfLinesAbove = 0;
+
+lineScores.forEach((item, index) => {
+    if (item.score === previousScore) {
+        // Same score as previous, assign the same rank
+        item.rank = currentRank;
+    } else {
+        // New score, update rank based on the actual index of non-zero scores
+        currentRank = countOfLinesAbove + 1;
+        item.rank = currentRank;
+        previousScore = item.score;
+    }
+    countOfLinesAbove++;
+});
+
+// Find the entry for Line 1181 and print its rank
+const lineOfInterest = 170;
+const entry = lineScores.find(item => item.line === lineOfInterest);
+
+// Print each line's score, suspiciousness, and rank for non-zero scores
+console.log("Line Scores, Suspiciousness, and Ranks:");
+lineScores.forEach(item => {
+    if (item.score > 0) {
+        console.log(`Line ${item.line}: Suspiciousness Score: ${item.score.toFixed(4)}, Rank: ${item.rank}`);
+    }
+});
+
+// Print the rank of Line 1181
+if (entry) {
+    console.log(`Rank of Line ${lineOfInterest}: ${entry.rank}`);
+} else {
+    console.log(`Line ${lineOfInterest} not found in the coverage data.`);
+}
+
+// Count how many scores have non-zero suspiciousness
+const nonZeroSuspiciousCount = lineScores.filter(item => item.score > 0).length;
+
+// Print the count of non-zero suspiciousness
+console.log(`Number of lines with non-zero suspiciousness: ${nonZeroSuspiciousCount}`);
+```
+
+
+
+
+
+
 
 
 
